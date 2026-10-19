@@ -1,0 +1,14 @@
+{
+  "name": "midrar",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Midrar - food waste tracking, forecasting and recommendations",
+  "scripts": {
+    "start": "node server.js",
+    "start:mssql": "node server.js",
+    "migrate": "node scripts/migrate-sqlite-to-mssql.js",
+    "test": "node --test"
+  },
+  "optionalDependencies": { "mssql": "^12.7.9" },
+  "engines": { "node": ">=22.13" }
+}
